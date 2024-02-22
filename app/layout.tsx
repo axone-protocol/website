@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
 import { Courier_Prime } from "next/font/google";
 import localFont from "next/font/local";
