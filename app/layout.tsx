@@ -1,10 +1,14 @@
+import "app/globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
 import { Courier_Prime } from "next/font/google";
 import localFont from "next/font/local";
+import HeaderBar from "components/headerBar";
 
-import "app/globals.css";
-
-const courrierPrime = Courier_Prime({ subsets: ["latin"], weight: "400" });
+const courrierPrime = Courier_Prime({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 const SixtyFour = localFont({
   src: "../fonts/Sixtyfour-Regular-Variable.ttf",
   weight: "400",
@@ -22,7 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={courrierPrime.className}>{children}</body>
+      <body className={courrierPrime.className}>
+        <>
+          <HeaderBar />
+          {children}
+        </>
+      </body>
     </html>
   );
 }
