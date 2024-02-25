@@ -1,5 +1,4 @@
 import "app/globals.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
 import { Courier_Prime } from "next/font/google";
 import localFont from "next/font/local";
@@ -8,10 +7,12 @@ import HeaderBar from "components/headerBar";
 const courrierPrime = Courier_Prime({
   subsets: ["latin"],
   weight: ["400", "700"],
+  variable: "--font-courrier-prime",
 });
 const SixtyFour = localFont({
   src: "../fonts/Sixtyfour-Regular-Variable.ttf",
   weight: "400",
+  variable: "--font-sixty-four",
 });
 
 export const metadata: Metadata = {
