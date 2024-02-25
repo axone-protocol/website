@@ -26,12 +26,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={courrierPrime.className}>
-        <>
-          <HeaderBar />
-          {children}
-        </>
+    <html
+      lang="en"
+      className={`${courrierPrime.variable} ${SixtyFour.variable}`}
+    >
+      <body className={`${courrierPrime.className}`}>
+        <HeaderBar />
+        <div className="container mt-5">{children}</div>
       </body>
     </html>
   );
