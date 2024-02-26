@@ -1,12 +1,19 @@
 "use client";
 
+import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "next/image";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import AxoneLogo from "public/images/axone-logo.svg";
 
-const HeaderBar = () => {
+export default function HeaderBar() {
   return (
-    <Navbar fixed="top" collapseOnSelect expand="sm">
+    <Navbar
+      fixed="top"
+      collapseOnSelect
+      expand="sm"
+      bg="light"
+      data-bs-theme="light"
+    >
       <Container fluid>
         <Navbar.Brand>
           <Image src={AxoneLogo} priority width="150" alt="Axone logo" />
@@ -65,5 +72,4 @@ const HeaderBar = () => {
       </Container>
     </Navbar>
   );
-};
-export default HeaderBar;
+}
