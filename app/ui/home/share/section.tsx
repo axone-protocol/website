@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionImage from "components/sectionImage";
+import SectionImage from "app/components/sectionImage";
 import computerAscii from "public/images/computer-ascii.png";
 
 export default function ShareSection() {

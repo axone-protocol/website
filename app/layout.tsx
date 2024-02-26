@@ -2,7 +2,7 @@ import "app/globals.css";
 import type { Metadata } from "next";
 import { Courier_Prime } from "next/font/google";
 import localFont from "next/font/local";
-import HeaderBar from "components/headerBar";
+import HeaderBar from "app/components/headerBar";
 
 const courrierPrime = Courier_Prime({
   subsets: ["latin"],
