@@ -1,4 +1,4 @@
-import ButtonsCenteredOnBgImage from "components/buttonsCenteredOnBgImage";
+import ButtonsCenteredOnBgImage from "app/components/buttonsCenteredOnBgImage";
 import {
   AcademyButton,
   DocumentationButton,

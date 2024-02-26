@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "components/button";
+import Button from "app/components/button";
 import shape1 from "public/images/shape1.png";
 import { OverloadProps } from "app/lib/definitions";
 
