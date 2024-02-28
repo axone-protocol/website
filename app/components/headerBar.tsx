@@ -15,7 +15,7 @@ export default function HeaderBar() {
       data-bs-theme="light"
     >
       <Container fluid>
-        <Navbar.Brand>
+        <Navbar.Brand href="/">
           <Image src={AxoneLogo} priority width="150" alt="Axone logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -24,7 +24,7 @@ export default function HeaderBar() {
           <Nav>
             <NavDropdown title="LEARN" className="fw-bold">
               <NavDropdown.Item href="">About Axone</NavDropdown.Item>
-              <NavDropdown.Item href="">Roadmap</NavDropdown.Item>
+              <NavDropdown.Item href="/roadmap">Roadmap</NavDropdown.Item>
               <NavDropdown.Item href="https://docs.okp4.network/academy/overview">
                 Academy
               </NavDropdown.Item>
