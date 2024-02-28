@@ -5,11 +5,11 @@ import CollaborationSection from "app/ui/home/collaboration/section";
 
 export default function Home() {
   return (
-    <div className="space-y-20">
+    <>
       <ProtocolSection />
       <ShareSection />
       <PrivacySection />
       <CollaborationSection />
-    </div>
+    </>
   );
 }

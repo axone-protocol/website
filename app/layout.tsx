@@ -32,7 +32,7 @@ export default function RootLayout({
     >
       <body className={`${courrierPrime.className}`}>
         <HeaderBar />
-        <div className="container mt-5">{children}</div>
+        <div className="container my-5 space-y-20">{children}</div>
       </body>
     </html>
   );
