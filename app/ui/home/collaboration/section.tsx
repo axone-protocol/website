@@ -1,3 +1,4 @@
+import Section from "app/components/section";
 import ButtonsCenteredOnBgImage from "app/components/buttonsCenteredOnBgImage";
 import {
   AcademyButton,
@@ -7,23 +8,20 @@ import {
 
 export default function CollaborationSection() {
   return (
-    <div className="flex justify-center">
-      <div className="space-y-10 text-center sm:w-2/3">
-        <h2 className="font-sixtyFour text-xl md:text-2xl">
-          A new horizon for AI
-        </h2>
-        <div>
-          <p>
-            Creating trust, composability & incentives to maximize collaborative
-            value creation.
-          </p>
-        </div>
-        <ButtonsCenteredOnBgImage
-          LeftButton={AcademyButton}
-          RightButton={DocumentationButton}
-          BackgroundImage={Shape2}
-        />
-      </div>
-    </div>
+    <Section
+      title={{ text: "A new horizon for AI", size: "lg" }}
+      textAlign="center"
+      padding
+    >
+      <p>
+        Creating trust, composability & incentives to maximize collaborative
+        value creation.
+      </p>
+      <ButtonsCenteredOnBgImage
+        LeftButton={AcademyButton}
+        RightButton={DocumentationButton}
+        BackgroundImage={Shape2}
+      />
+    </Section>
   );
 }
