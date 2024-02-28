@@ -1,6 +1,11 @@
 import { LinkProps as NextLinkProps } from "next/link";
 // import { ImageProps as NextImageProps } from "next/image";
 
+export type UnderlinedLink = {
+  url: string;
+  children: React.ReactNode;
+};
+
 export type ButtonProps = NextLinkProps & {
   children: React.ReactNode;
   color: "orange" | "white";
@@ -17,7 +22,7 @@ export type SectionTitleProps = {
 export type SectionProps = SectionTitleProps & {
   textAlign: "left" | "center";
   padding?: boolean;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export type SectionWithImageProps = AlignContentProps &

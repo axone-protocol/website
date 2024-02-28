@@ -2,22 +2,19 @@ import Image from "next/image";
 import Button from "app/components/button";
 import shape1 from "public/images/shape1.png";
 import { OverloadProps } from "app/lib/definitions";
+import { internalUrls, externalUrls } from "app/lib/navigation/constants";
 
 // these components are isolated into a separate folder
 // otherwise they will be recreated on every home page re-render
 
 export const WhitepaperButton = (props: OverloadProps) => (
-  <Button
-    {...props}
-    color="orange"
-    href="https://docs.okp4.network/whitepaper/abstract"
-  >
+  <Button {...props} color="orange" href={externalUrls.whitepaper}>
     Our Whitepaper
   </Button>
 );
 
 export const AboutButton = (props: OverloadProps) => (
-  <Button {...props} color="white" href="">
+  <Button {...props} color="white" href={internalUrls.about}>
     What is Axone ?
   </Button>
 );
