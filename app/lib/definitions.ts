@@ -37,6 +37,11 @@ export type SectionImageProps = AlignContentProps &
     children: React.ReactNode;
   };
 
+export type ButtonCenteredOnBgImageProps = {
+  backgroundImage: React.ReactNode;
+  button: React.ReactNode;
+};
+
 // for now, only className prop is overloaded in ui/home/[sectionName]/component.tsx
 // for ButtonsCenteredOnBgImage component props (LeftButton, RightButton, BackgroundImage)
 export type OverloadProps = { className?: string };
