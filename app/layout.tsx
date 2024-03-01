@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Courier_Prime } from "next/font/google";
 import localFont from "next/font/local";
 import HeaderBar from "app/components/headerBar";
+import Footer from "app/components/footer";
 
 const courrierPrime = Courier_Prime({
   subsets: ["latin"],
@@ -32,7 +33,10 @@ export default function RootLayout({
     >
       <body className={`${courrierPrime.className}`}>
         <HeaderBar />
-        <div className="container my-5 space-y-20">{children}</div>
+        <div className="container my-5 space-y-20">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
