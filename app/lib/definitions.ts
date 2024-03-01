@@ -20,7 +20,7 @@ export type SectionTitleProps = {
 };
 
 export type SectionProps = SectionTitleProps & {
-  textAlign: "left" | "center";
+  textAlign: "left" | "center" | "right";
   padding?: boolean;
   children?: React.ReactNode;
 };

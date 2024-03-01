@@ -4,6 +4,7 @@ import { SectionProps } from "app/lib/definitions";
 const textAligns = {
   left: "text-center sm:text-left",
   center: "text-center sm:text-center",
+  right: "text-center sm:text-right",
 };
 
 const Section = ({

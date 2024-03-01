@@ -1,5 +1,7 @@
+import Image from "next/image";
 import SectionWithImage from "app/components/sectionWithImage";
 import { roadmapSectionImageClass } from "app/lib/utils";
+import sphereAscii from "public/images/sphere-ascii.png";
 
 export default function Q22024Section() {
   return (
@@ -8,10 +10,16 @@ export default function Q22024Section() {
         text: "Q2 2024",
         size: "lg",
       }}
-      textAlign="center"
+      textAlign="right"
       alignContent="top"
       image={{
-        component: <div className={roadmapSectionImageClass} />,
+        component: (
+          <Image
+            src={sphereAscii}
+            alt="sphere"
+            className={roadmapSectionImageClass}
+          />
+        ),
         position: "right",
       }}
     >

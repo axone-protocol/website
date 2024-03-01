@@ -1,14 +1,22 @@
+import Image from "next/image";
 import SectionWithImage from "app/components/sectionWithImage";
 import { roadmapSectionImageClass } from "app/lib/utils";
+import laptopAscii from "public/images/laptop-ascii.png";
 
 export default function LastYearsSection() {
   return (
     <SectionWithImage
       title={{ text: "2022 - 2023", size: "lg" }}
-      textAlign="center"
+      textAlign="right"
       alignContent="top"
       image={{
-        component: <div className={roadmapSectionImageClass} />,
+        component: (
+          <Image
+            src={laptopAscii}
+            alt="laptop"
+            className={roadmapSectionImageClass}
+          />
+        ),
         position: "right",
       }}
     >
