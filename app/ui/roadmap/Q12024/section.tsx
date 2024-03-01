@@ -1,14 +1,22 @@
+import Image from "next/image";
 import SectionWithImage from "app/components/sectionWithImage";
 import { roadmapSectionImageClass } from "app/lib/utils";
+import axoneLogoAscii from "public/images/axone-logo-ascii.png";
 
 export default function Q12024Section() {
   return (
     <SectionWithImage
       title={{ text: "Q1 2024", size: "lg" }}
-      textAlign="center"
+      textAlign="left"
       alignContent="top"
       image={{
-        component: <div className={roadmapSectionImageClass} />,
+        component: (
+          <Image
+            src={axoneLogoAscii}
+            alt="axone"
+            className={roadmapSectionImageClass}
+          />
+        ),
         position: "left",
       }}
     >
