@@ -20,7 +20,7 @@ export type SectionTitleProps = {
 };
 
 export type SectionProps = SectionTitleProps & {
-  textAlign: "left" | "center";
+  textAlign: "left" | "center" | "right";
   padding?: boolean;
   children?: React.ReactNode;
 };
@@ -36,6 +36,11 @@ export type SectionImageProps = AlignContentProps &
   ImagePositionProps & {
     children: React.ReactNode;
   };
+
+export type ButtonCenteredOnBgImageProps = {
+  backgroundImage: React.ReactNode;
+  button: React.ReactNode;
+};
 
 // for now, only className prop is overloaded in ui/home/[sectionName]/component.tsx
 // for ButtonsCenteredOnBgImage component props (LeftButton, RightButton, BackgroundImage)
