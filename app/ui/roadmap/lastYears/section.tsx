@@ -8,7 +8,7 @@ export default function LastYearsSection() {
     <SectionWithImage
       title={{ text: "2022 - 2023", size: "lg" }}
       textAlign="right"
-      alignContent="top"
+      alignContent="center"
       image={{
         component: (
           <Image

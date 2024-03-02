@@ -11,7 +11,7 @@ export default function Q22024Section() {
         size: "lg",
       }}
       textAlign="right"
-      alignContent="top"
+      alignContent="center"
       image={{
         component: (
           <Image
