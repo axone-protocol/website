@@ -8,7 +8,7 @@ export default function Q12024Section() {
     <SectionWithImage
       title={{ text: "Q1 2024", size: "lg" }}
       textAlign="left"
-      alignContent="top"
+      alignContent="center"
       image={{
         component: (
           <Image
