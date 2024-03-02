@@ -1,16 +1,27 @@
-import Section from "app/components/section";
+import Image from "next/image";
+import SectionWithTopImage from "app/components/sectionWithTopImage";
 import UnderlinedLink from "app/components/underlinedLink";
 import { externalUrls } from "app/lib/navigation/constants";
+import axoneTextLogoAscii from "public/images/axone-text-logo-ascii.png";
 
 export default function AboutAxoneSection() {
   return (
-    <Section
+    <SectionWithTopImage
       title={{
         text: "What is Axone?",
         size: "lg",
       }}
       textAlign="center"
       padding
+      image={{
+        component: (
+          <Image
+            src={axoneTextLogoAscii}
+            alt="axone text logo"
+            className="mb-5"
+          />
+        ),
+      }}
     >
       <p>
         Axone is an open network that lets users buy or sell any off-chain
@@ -43,6 +54,6 @@ export default function AboutAxoneSection() {
         our{" "}
         <UnderlinedLink url={externalUrls.doc}>Technical Docs</UnderlinedLink>
       </p>
-    </Section>
+    </SectionWithTopImage>
   );
 }
