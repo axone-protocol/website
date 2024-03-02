@@ -1,15 +1,26 @@
-import Section from "app/components/section";
-import { fullWidthImageClass } from "app/lib/utils";
+import Image from "next/image";
+import SectionWithTopImage from "app/components/sectionWithTopImage";
+import brainAscii from "public/images/brain-ascii.png";
 
 export default function CoordinationSection() {
   return (
-    <Section
+    <SectionWithTopImage
       title={{
-        text: "From economies of scale... to coordination at scale",
+        text: `From economies of scale...
+        to coordination at scale`,
         size: "lg",
       }}
       textAlign="center"
       padding
+      image={{
+        component: (
+          <Image
+            src={brainAscii}
+            alt="brain"
+            className="w-2/3 md:w-1/2 lg:w-2/3"
+          />
+        ),
+      }}
     >
       <p>
         Building AI is about coordination between data, models, and
@@ -29,7 +40,6 @@ export default function CoordinationSection() {
         Millions of data providers, of model providers, of infrastructure
         providers... together. Sovereign. Without intermediaries.
       </p>
-      <div className={`mt-2 ${fullWidthImageClass}`} />
-    </Section>
+    </SectionWithTopImage>
   );
 }

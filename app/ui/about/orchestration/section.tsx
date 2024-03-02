@@ -8,11 +8,12 @@ export default function OrchestrationSection() {
         size: "xl",
       }}
       textAlign="center"
+      padding
     >
-      <p>
-        Orchestration : the process of coordinating complex workflows and
-        transactions on the blockchain, integrating digital resources, AI
-        algorithms, and services for efficient knowledge creation and sharing.
+      <p className="font-bold">THE ORCHESTRATION LAYER</p>
+      <p className="italic">
+        Orchestration: the process of coordinating workflows of shared datasets
+        and AI algorithms across various off-chain environments.
       </p>
     </Section>
   );

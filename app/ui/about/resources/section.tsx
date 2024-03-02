@@ -1,5 +1,6 @@
+import Image from "next/image";
 import SectionWithImage from "app/components/sectionWithImage";
-import { fullWidthImageClass } from "app/lib/utils";
+import axoneTextLogoAscii from "public/images/axone-text-logo-ascii.png";
 
 export default function ResourcesSection() {
   return (
@@ -11,7 +12,13 @@ export default function ResourcesSection() {
       alignContent="center"
       textAlign="left"
       image={{
-        component: <div className={fullWidthImageClass} />,
+        component: (
+          <Image
+            src={axoneTextLogoAscii}
+            alt="axone text logo"
+            className="sm:w-full"
+          />
+        ),
         position: "right",
       }}
     />
