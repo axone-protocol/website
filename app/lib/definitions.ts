@@ -25,6 +25,13 @@ export type SectionProps = SectionTitleProps & {
   children?: React.ReactNode;
 };
 
+export type SectionWithTopImageProps = SectionTitleProps &
+  SectionProps & {
+    image: {
+      component: any;
+    };
+  };
+
 export type SectionWithImageProps = AlignContentProps &
   SectionProps & {
     image: ImagePositionProps & {
