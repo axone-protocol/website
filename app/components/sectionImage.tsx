@@ -1,9 +1,10 @@
 import { SectionImageProps } from "app/lib/definitions";
 
-// const horizontalAligns = {
-//   left: "sm:justify-start",
-//   right: "sm:justify-end",
-// };
+const horizontalAligns = {
+  left: "sm:justify-start",
+  center: "sm:justify-center",
+  right: "sm:justify-end",
+};
 
 const verticalAligns = {
   top: "items-start",
@@ -11,15 +12,14 @@ const verticalAligns = {
 };
 
 const SectionImage = ({
-  // position,
   alignContent,
+  justify = "center",
   children,
 }: SectionImageProps) => {
-  // const justify = horizontalAligns[position];
-  const align = verticalAligns[alignContent];
+  const alignX = horizontalAligns[justify];
+  const alignY = verticalAligns[alignContent];
   return (
-    // <div className={`flex justify-center ${justify} ${align}`}>{children}</div>
-    <div className={`flex justify-center ${align}`}>{children}</div>
+    <div className={`flex justify-center ${alignX} ${alignY}`}>{children}</div>
   );
 };
 

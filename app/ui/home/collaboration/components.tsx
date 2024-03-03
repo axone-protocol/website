@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "app/components/button";
-import shape2 from "public/images/shape2.png";
+import shape2 from "public/images/shape2.svg";
 import { OverloadProps } from "app/lib/definitions";
 import { externalUrls } from "app/lib/navigation/constants";
 
@@ -20,5 +20,5 @@ export const DocumentationButton = (props: OverloadProps) => (
 );
 
 export const Shape2 = (props: OverloadProps) => (
-  <Image {...props} src={shape2} alt="shape2" />
+  <Image {...props} src={shape2} alt="shape2" className="h-auto w-1/3" />
 );

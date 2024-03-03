@@ -33,7 +33,7 @@ export default function RootLayout({
     >
       <body className={`${courrierPrime.className}`}>
         <HeaderBar />
-        <div className="container my-5 space-y-20">
+        <div className="container mb-5 mt-10 space-y-20">
           {children}
           <Footer />
         </div>

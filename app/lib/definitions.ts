@@ -14,6 +14,7 @@ export type ButtonProps = NextLinkProps & {
 
 type AlignContentProps = { alignContent: "center" | "top" };
 type ImagePositionProps = { position: "left" | "right" };
+type ImageJustifyProps = { justify?: "left" | "center" | "right" };
 
 export type SectionTitleProps = {
   title: { text: string; size: "lg" | "xl" };
@@ -34,13 +35,15 @@ export type SectionWithTopImageProps = SectionTitleProps &
 
 export type SectionWithImageProps = AlignContentProps &
   SectionProps & {
-    image: ImagePositionProps & {
-      component: any;
-    };
+    image: ImagePositionProps &
+      ImageJustifyProps & {
+        component: any;
+      };
   };
 
 export type SectionImageProps = AlignContentProps &
-  ImagePositionProps & {
+  ImagePositionProps &
+  ImageJustifyProps & {
     children: React.ReactNode;
   };
 
@@ -57,7 +60,6 @@ export type ButtonsCenteredOnBgImageProps = {
   BackgroundImage: React.ComponentType<OverloadProps>;
   LeftButton: React.ComponentType<OverloadProps>;
   RightButton: React.ComponentType<OverloadProps>;
-  marginTop?: boolean;
 };
 
 // if other props need to be overload, you can use the following type

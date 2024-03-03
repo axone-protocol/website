@@ -1,7 +1,6 @@
 import Image from "next/image";
 import SectionWithImage from "app/components/sectionWithImage";
-import { homeSectionImageClass } from "app/lib/utils";
-import diskAscii from "public/images/disk-ascii.png";
+import diskAscii from "public/images/disk-ascii.svg";
 
 export default function PrivacySection() {
   return (
@@ -14,9 +13,14 @@ export default function PrivacySection() {
       alignContent="center"
       image={{
         component: (
-          <Image src={diskAscii} alt="disk" className={homeSectionImageClass} />
+          <Image
+            src={diskAscii}
+            alt="disk"
+            className="w-1/2 sm:w-5/6 lg:w-2/3 xl:w-3/5"
+          />
         ),
         position: "right",
+        justify: "right",
       }}
     >
       <p>

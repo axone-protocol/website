@@ -28,7 +28,11 @@ const SectionWithImage = ({
           {children}
         </Section>
       </div>
-      <SectionImage position={image.position} alignContent={alignContent}>
+      <SectionImage
+        position={image.position}
+        alignContent={alignContent}
+        justify={image.justify}
+      >
         {image.component}
       </SectionImage>
     </div>
