@@ -3,7 +3,7 @@ import AxoneLogo from "app/components/axoneLogo";
 import Button from "app/components/button";
 import ButtonCenteredOnBgImage from "app/components/buttonCenteredOnBgImage";
 import SocialIcons from "app/components/socialIcons";
-import shape2 from "public/images/shape2.png";
+import shape3 from "public/images/shape3.svg";
 
 export default function Footer() {
   return (
@@ -18,7 +18,7 @@ export default function Footer() {
 
 const NewsletterSubscription = () => (
   <div className="flex flex-col place-content-between gap-5">
-    <h1 className="text-center font-sixtyFour text-xl sm:text-left">
+    <h1 className="text-center font-sixtyFour text-xl text-black sm:text-left">
       Subscribe to our newsletter
     </h1>
     <div className="flex sm:justify-start">
@@ -30,7 +30,9 @@ const NewsletterSubscription = () => (
     </div>
     <div className="flex justify-center sm:justify-start">
       <ButtonCenteredOnBgImage
-        backgroundImage={<Image src={shape2} alt="shape2" className="w-2/3" />}
+        backgroundImage={
+          <Image src={shape3} alt="shape3" className="h-auto w-full" />
+        }
         button={
           <Button href="" color="orange" className="inline-flex justify-center">
             Subscribe

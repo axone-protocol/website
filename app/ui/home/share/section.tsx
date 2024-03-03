@@ -1,7 +1,6 @@
 import Image from "next/image";
 import SectionWithImage from "app/components/sectionWithImage";
-import { homeSectionImageClass } from "app/lib/utils";
-import computerAscii from "public/images/computer-ascii.png";
+import computerAscii from "public/images/computer-ascii.svg";
 
 export default function ShareSection() {
   return (
@@ -17,10 +16,11 @@ export default function ShareSection() {
           <Image
             src={computerAscii}
             alt="computer"
-            className={homeSectionImageClass}
+            className="w-3/5 sm:w-auto lg:w-3/4 xl:w-2/3"
           />
         ),
         position: "left",
+        justify: "left",
       }}
     >
       <p>
