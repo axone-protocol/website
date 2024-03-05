@@ -10,7 +10,7 @@ export default function CoordinationSection() {
         to coordination at scale`,
         size: "lg",
       }}
-      textAlign="center"
+      textAlign="left"
       padding
       image={{
         component: (
@@ -22,7 +22,7 @@ export default function CoordinationSection() {
         ),
       }}
     >
-      <p>
+      <p className="pt-12">
         Building AI is about coordination between data, models, and
         infrastructure.
       </p>

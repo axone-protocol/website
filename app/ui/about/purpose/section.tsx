@@ -9,7 +9,7 @@ export default function PurposeSection() {
         text: "Axone’s purpose is to open the digital silos",
         size: "lg",
       }}
-      textAlign="center"
+      textAlign="left"
       padding
       image={{
         component: (
@@ -21,7 +21,7 @@ export default function PurposeSection() {
         ),
       }}
     >
-      <p>
+      <p className="pt-12">
         The world is filled with an abundance of datasets, models, and
         resources. But they stay isolated. Within companies. Within our servers
         and devices.

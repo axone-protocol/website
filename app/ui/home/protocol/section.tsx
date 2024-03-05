@@ -20,7 +20,7 @@ export default function ProtocolSection() {
         Axone is the universal protocol to connect, share and monetize resources
         between all AI services.
       </p>
-      <p>
+      <p className="mb-6 lg:mb-0">
         A Cosmos-based appchain for AI workflow management, universally
         compatible with all AI services.
       </p>

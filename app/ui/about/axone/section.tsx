@@ -11,7 +11,7 @@ export default function AboutAxoneSection() {
         text: "What is Axone?",
         size: "lg",
       }}
-      textAlign="center"
+      textAlign="left"
       padding
       image={{
         component: (
@@ -23,7 +23,7 @@ export default function AboutAxoneSection() {
         ),
       }}
     >
-      <p>
+      <p className="pt-12">
         Axone is an open network that lets users buy or sell any off-chain
         resource securely and efficiently. A blockchain specifically designed
         for off-chain coordination at scale.

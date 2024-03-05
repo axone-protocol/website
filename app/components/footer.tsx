@@ -48,6 +48,8 @@ const AxoneLogoAndSocialIcons = () => (
     <div className="flex justify-center sm:justify-end">
       <AxoneLogo width="200" />
     </div>
-    <SocialIcons />
+    <div className="flex items-center justify-center sm:justify-end">
+      <SocialIcons />
+    </div>
   </div>
 );
