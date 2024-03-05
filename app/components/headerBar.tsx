@@ -1,5 +1,6 @@
 "use client";
 
+import "app/styles/headerBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import AxoneLogo from "app/components/axoneLogo";
@@ -8,7 +9,7 @@ import { internalUrls, externalUrls } from "app/lib/navigation/constants";
 
 export default function HeaderBar() {
   return (
-    <Navbar fixed="top" collapseOnSelect expand="sm" bg="white">
+    <Navbar fixed="top" collapseOnSelect expand="xl" bg="white">
       <Container>
         <Navbar.Brand href={internalUrls.home}>
           <AxoneLogo width="150" />
@@ -16,7 +17,7 @@ export default function HeaderBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" />
-          <Nav className="sm:space-x-5 md:space-x-10">
+          <Nav className="xl:space-x-10">
             <NavDropdown title="LEARN" className="text-xl font-bold">
               <NavDropdown.Item href={internalUrls.about}>
                 About Axone
@@ -41,7 +42,9 @@ export default function HeaderBar() {
                 Testnet
               </NavDropdown.Item>
             </NavDropdown>
-            <SocialIcons />
+            <div className="socialIcons flex justify-center">
+              <SocialIcons />
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>

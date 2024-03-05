@@ -8,20 +8,22 @@ import {
 
 export default function CollaborationSection() {
   return (
-    <Section
-      title={{ text: "A new horizon for AI", size: "lg" }}
-      textAlign="center"
-      padding
-    >
-      <p>
-        Creating trust, composability & incentives to maximize collaborative
-        value creation.
-      </p>
-      <ButtonsCenteredOnBgImage
-        LeftButton={AcademyButton}
-        RightButton={DocumentationButton}
-        BackgroundImage={Shape2}
-      />
-    </Section>
+    <div className="py-28">
+      <Section
+        title={{ text: "A new horizon for AI", size: "lg" }}
+        textAlign="center"
+        padding
+      >
+        <p>
+          Creating trust, composability & incentives to maximize collaborative
+          value creation.
+        </p>
+        <ButtonsCenteredOnBgImage
+          LeftButton={AcademyButton}
+          RightButton={DocumentationButton}
+          BackgroundImage={Shape2}
+        />
+      </Section>
+    </div>
   );
 }

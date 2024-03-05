@@ -11,8 +11,8 @@ const config: Config = {
     screens: {
       sm: "576px",
       md: "768px",
-      lg: "1024px",
-      xl: "1280px",
+      lg: "992px",
+      xl: "1200px",
     },
     fontFamily: {
       courrierPrime: ["var(--font-courrier-prime)"],
@@ -25,6 +25,10 @@ const config: Config = {
     extend: {
       colors: {
         orange: "#FB9501",
+        black: "#002131",
+      },
+      fontSize: {
+        "4xl": ["36px", "50px"],
       },
     },
   },

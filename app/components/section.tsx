@@ -13,7 +13,7 @@ const Section = ({
   padding = false,
   children,
 }: SectionProps) => {
-  const paddingX = padding ? "sm:px-20 lg:px-60 xl:px-80" : "";
+  const paddingX = padding ? "sm:px-20 lg:px-60" : "";
   return (
     <div className={`grid gap-3 ${textAligns[textAlign]} ${paddingX}`}>
       <SectionTitle title={title} />
