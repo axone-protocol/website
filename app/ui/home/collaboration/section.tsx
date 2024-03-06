@@ -1,5 +1,6 @@
-import Section from "app/components/section";
-import ButtonsCenteredOnBgImage from "app/components/buttonsCenteredOnBgImage";
+import Section from "app/components/section/section";
+import BgImageContainer from "app/components/button/bgImageContainer";
+import ButtonsContainer from "app/components/button/buttonsContainer";
 import {
   AcademyButton,
   DocumentationButton,
@@ -18,11 +19,12 @@ export default function CollaborationSection() {
           Creating trust, composability & incentives to maximize collaborative
           value creation.
         </p>
-        <ButtonsCenteredOnBgImage
-          LeftButton={AcademyButton}
-          RightButton={DocumentationButton}
-          BackgroundImage={Shape2}
-        />
+        <BgImageContainer backgroundImage={<Shape2 />}>
+          <ButtonsContainer
+            leftButton={<AcademyButton />}
+            rightButton={<DocumentationButton />}
+          />
+        </BgImageContainer>
       </Section>
     </div>
   );

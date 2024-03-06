@@ -1,4 +1,4 @@
-import SectionTitle from "app/components/sectionTitle";
+import SectionTitle from "app/components/section/sectionTitle";
 import { SectionProps } from "app/lib/definitions";
 
 const textAligns = {

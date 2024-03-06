@@ -1,6 +1,6 @@
-import Section from "app/components//section";
-import SectionImage from "app/components/sectionImage";
-import { SectionWithImageProps } from "app/lib/definitions";
+import Section from "app/components/section/section";
+import ImageContainer from "app/components/section/imageContainer";
+import { SectionWithSideImageProps } from "app/lib/definitions";
 
 const orders = {
   left: "order-last",
@@ -12,13 +12,13 @@ const contentAligns = {
   top: "content-start",
 };
 
-const SectionWithImage = ({
+const SectionWithSideImage = ({
   title,
   textAlign,
   alignContent,
   image,
   children,
-}: SectionWithImageProps) => {
+}: SectionWithSideImageProps) => {
   const order = orders[image.position];
   const align = contentAligns[alignContent];
   return (
@@ -28,15 +28,15 @@ const SectionWithImage = ({
           {children}
         </Section>
       </div>
-      <SectionImage
+      <ImageContainer
         position={image.position}
         alignContent={alignContent}
         justify={image.justify}
       >
         {image.component}
-      </SectionImage>
+      </ImageContainer>
     </div>
   );
 };
 
-export default SectionWithImage;
+export default SectionWithSideImage;

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import SectionWithImage from "app/components/sectionWithImage";
+import SectionWithSideImage from "app/components/section/sectionWithSideImage";
 import axoneTextLogoAscii from "public/images/axone-text-logo-ascii.png";
 
 export default function ResourcesSection() {
   return (
     <div className="pb-28">
-      <SectionWithImage
+      <SectionWithSideImage
         title={{
           text: "Axone is the universal protocol to connect, share and monetize resources between all AI services.",
           size: "lg",

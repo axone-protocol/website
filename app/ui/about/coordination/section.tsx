@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionWithTopImage from "app/components/sectionWithTopImage";
+import SectionWithTopImage from "app/components/section/sectionWithTopImage";
 import brainAscii from "public/images/brain-ascii.png";
 
 export default function CoordinationSection() {

@@ -1,4 +1,4 @@
-import { SectionImageProps } from "app/lib/definitions";
+import { ImageContainerProps } from "app/lib/definitions";
 
 const horizontalAligns = {
   left: "sm:justify-start",
@@ -11,11 +11,11 @@ const verticalAligns = {
   center: "items-center",
 };
 
-const SectionImage = ({
+const ImageContainer = ({
   alignContent,
   justify = "center",
   children,
-}: SectionImageProps) => {
+}: ImageContainerProps) => {
   const alignX = horizontalAligns[justify];
   const alignY = verticalAligns[alignContent];
   return (
@@ -23,4 +23,4 @@ const SectionImage = ({
   );
 };
 
-export default SectionImage;
+export default ImageContainer;

@@ -1,4 +1,4 @@
-import "app/globals.css";
+import "app/styles/globals.css";
 import type { Metadata } from "next";
 import { Courier_Prime } from "next/font/google";
 import localFont from "next/font/local";

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import AxoneLogo from "app/components/axoneLogo";
-import Button from "app/components/button";
-import ButtonCenteredOnBgImage from "app/components/buttonCenteredOnBgImage";
+import Button from "app/components/button/button";
+import BgImageContainer from "app/components/button/bgImageContainer";
 import SocialIcons from "app/components/socialIcons";
 import shape3 from "public/images/shape3.svg";
 
@@ -29,16 +29,14 @@ const NewsletterSubscription = () => (
       />
     </div>
     <div className="flex justify-center sm:justify-start">
-      <ButtonCenteredOnBgImage
+      <BgImageContainer
         backgroundImage={
           <Image src={shape3} alt="shape3" className="h-auto w-full" />
         }
-        button={
-          <Button href="" color="orange" className="inline-flex justify-center">
-            Subscribe
-          </Button>
-        }
-      />
+        className="sm:justify-start"
+      >
+        <SubscribeButton />
+      </BgImageContainer>
     </div>
   </div>
 );
@@ -52,4 +50,10 @@ const AxoneLogoAndSocialIcons = () => (
       <SocialIcons />
     </div>
   </div>
+);
+
+const SubscribeButton = () => (
+  <Button href="" color="orange" className="inline-flex justify-center">
+    Subscribe
+  </Button>
 );

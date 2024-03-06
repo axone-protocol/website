@@ -1,11 +1,11 @@
 import Image from "next/image";
-import SectionWithImage from "app/components/sectionWithImage";
+import SectionWithSideImage from "app/components/section/sectionWithSideImage";
 import { roadmapSectionImageClass } from "app/lib/utils";
 import laptopAscii from "public/images/laptop-ascii.png";
 
 export default function LastYearsSection() {
   return (
-    <SectionWithImage
+    <SectionWithSideImage
       title={{ text: "2022 - 2023", size: "lg" }}
       textAlign="right"
       alignContent="center"
@@ -27,6 +27,6 @@ export default function LastYearsSection() {
       <p>Interfaces design</p>
       <p>Interfaces development</p>
       <p>Pre-seed & Seed raise</p>
-    </SectionWithImage>
+    </SectionWithSideImage>
   );
 }
