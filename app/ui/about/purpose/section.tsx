@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionWithTopImage from "app/components/sectionWithTopImage";
+import SectionWithTopImage from "app/components/section/sectionWithTopImage";
 import openAscii from "public/images/open-ascii.png";
 
 export default function PurposeSection() {

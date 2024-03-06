@@ -1,10 +1,10 @@
 import Image from "next/image";
-import SectionWithImage from "app/components/sectionWithImage";
+import SectionWithSideImage from "app/components/section/sectionWithSideImage";
 import diskAscii from "public/images/disk-ascii.svg";
 
 export default function PrivacySection() {
   return (
-    <SectionWithImage
+    <SectionWithSideImage
       title={{
         text: "Under any conditions",
         size: "lg",
@@ -28,6 +28,6 @@ export default function PrivacySection() {
         with the data owner choosing his level of privacy, from federated
         learning to open data contributons.
       </p>
-    </SectionWithImage>
+    </SectionWithSideImage>
   );
 }

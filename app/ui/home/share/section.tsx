@@ -1,10 +1,10 @@
 import Image from "next/image";
-import SectionWithImage from "app/components/sectionWithImage";
+import SectionWithSideImage from "app/components/section/sectionWithSideImage";
 import computerAscii from "public/images/computer-ascii.svg";
 
 export default function ShareSection() {
   return (
-    <SectionWithImage
+    <SectionWithSideImage
       title={{
         text: "Share anything",
         size: "lg",
@@ -28,6 +28,6 @@ export default function ShareSection() {
         and computational tools. It offers a secure, efficient platform for
         collaboration, driving innovation and value across the AI ecosystem.
       </p>
-    </SectionWithImage>
+    </SectionWithSideImage>
   );
 }
