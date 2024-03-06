@@ -6,11 +6,12 @@ const buttonColors = {
   white: "border border-black bg-white text-black",
 };
 
-const Button = ({ children, href, color, className }: ButtonProps) => {
+const Button = ({ children, href, color, className, target }: ButtonProps) => {
   return (
     <Link
       href={href}
       className={`${buttonColors[color]} min-w-44 p-3 no-underline ${className}`}
+      target={target}
     >
       {children}
     </Link>

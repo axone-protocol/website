@@ -46,13 +46,17 @@ export default function AboutAxoneSection() {
       </p>
       <p>
         More details on Axone on our{" "}
-        <UnderlinedLink url={externalUrls.whitepaper}>
+        <UnderlinedLink url={externalUrls.whitepaper} target="_blank">
           WhitePaper
         </UnderlinedLink>
         , our{" "}
-        <UnderlinedLink url={externalUrls.academy}>Academy</UnderlinedLink> and
-        our{" "}
-        <UnderlinedLink url={externalUrls.doc}>Technical Docs</UnderlinedLink>
+        <UnderlinedLink url={externalUrls.academy} target="_blank">
+          Academy
+        </UnderlinedLink>{" "}
+        and our{" "}
+        <UnderlinedLink url={externalUrls.doc} target="_blank">
+          Technical Docs
+        </UnderlinedLink>
       </p>
     </SectionWithTopImage>
   );

@@ -8,7 +8,12 @@ import { internalUrls, externalUrls } from "app/lib/navigation/constants";
 // otherwise they will be recreated on every home page re-render
 
 export const WhitepaperButton = (props: OverloadProps) => (
-  <Button {...props} color="orange" href={externalUrls.whitepaper}>
+  <Button
+    {...props}
+    color="orange"
+    href={externalUrls.whitepaper}
+    target="_blank"
+  >
     Our Whitepaper
   </Button>
 );
