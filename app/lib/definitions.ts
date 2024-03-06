@@ -1,15 +1,18 @@
+import { HTMLAttributeAnchorTarget } from "react";
 import { LinkProps as NextLinkProps } from "next/link";
 // import { ImageProps as NextImageProps } from "next/image";
 
-export type UnderlinedLink = {
+export type UnderlinedLinkProps = {
   url: string;
   children: React.ReactNode;
+  target?: HTMLAttributeAnchorTarget;
 };
 
 export type ButtonProps = NextLinkProps & {
   children: React.ReactNode;
   color: "orange" | "white";
   className?: string;
+  target?: HTMLAttributeAnchorTarget;
 };
 
 type AlignContentProps = { alignContent: "center" | "top" };

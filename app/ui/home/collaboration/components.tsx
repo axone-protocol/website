@@ -8,13 +8,13 @@ import { externalUrls } from "app/lib/navigation/constants";
 // otherwise they will be recreated on every home page re-render
 
 export const AcademyButton = (props: OverloadProps) => (
-  <Button {...props} color="orange" href={externalUrls.academy}>
+  <Button {...props} color="orange" href={externalUrls.academy} target="_blank">
     Academy
   </Button>
 );
 
 export const DocumentationButton = (props: OverloadProps) => (
-  <Button {...props} color="white" href={externalUrls.doc}>
+  <Button {...props} color="white" href={externalUrls.doc} target="_blank">
     Documentation
   </Button>
 );

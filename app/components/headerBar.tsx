@@ -25,20 +25,24 @@ export default function HeaderBar() {
               <NavDropdown.Item href={internalUrls.roadmap}>
                 Roadmap
               </NavDropdown.Item>
-              <NavDropdown.Item href={externalUrls.academy}>
+              <NavDropdown.Item href={externalUrls.academy} target="_blank">
                 Academy
               </NavDropdown.Item>
-              <NavDropdown.Item href={externalUrls.whitepaper}>
+              <NavDropdown.Item href={externalUrls.whitepaper} target="_blank">
                 Whitepaper
               </NavDropdown.Item>
-              <NavDropdown.Item href={externalUrls.blog}>Blog</NavDropdown.Item>
+              <NavDropdown.Item href={externalUrls.blog} target="_blank">
+                Blog
+              </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="BUILD" className="text-xl font-bold">
-              <NavDropdown.Item href={externalUrls.doc}>Docs</NavDropdown.Item>
-              <NavDropdown.Item href={externalUrls.github}>
+              <NavDropdown.Item href={externalUrls.doc} target="_blank">
+                Docs
+              </NavDropdown.Item>
+              <NavDropdown.Item href={externalUrls.github} target="_blank">
                 Github
               </NavDropdown.Item>
-              <NavDropdown.Item href={externalUrls.testnet}>
+              <NavDropdown.Item href={externalUrls.testnet} target="_blank">
                 Testnet
               </NavDropdown.Item>
             </NavDropdown>

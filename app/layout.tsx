@@ -12,7 +12,6 @@ const courrierPrime = Courier_Prime({
 });
 const SixtyFour = localFont({
   src: "../fonts/Sixtyfour-Regular-Variable.ttf",
-  weight: "400",
   variable: "--font-sixty-four",
 });
 

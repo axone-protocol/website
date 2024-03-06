@@ -18,7 +18,7 @@ export default function Footer() {
 
 const NewsletterSubscription = () => (
   <div className="flex flex-col place-content-between gap-5">
-    <h1 className="text-center font-sixtyFour text-xl text-black sm:text-left">
+    <h1 className="text-center font-sixtyFour text-xl font-semibold sm:text-left">
       Subscribe to our newsletter
     </h1>
     <div className="flex sm:justify-start">
