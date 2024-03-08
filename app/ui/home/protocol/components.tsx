@@ -1,29 +1,28 @@
 import Image from "next/image";
-import Button from "app/components/button";
-import shape1 from "public/images/shape1.svg";
-import { OverloadProps } from "app/lib/definitions";
+import Button from "app/components/button/button";
 import { internalUrls, externalUrls } from "app/lib/navigation/constants";
+import shape1 from "public/images/shape1.svg";
 
 // these components are isolated into a separate folder
 // otherwise they will be recreated on every home page re-render
 
-export const WhitepaperButton = (props: OverloadProps) => (
+export const WhitepaperButton = () => (
   <Button
-    {...props}
     color="orange"
     href={externalUrls.whitepaper}
     target="_blank"
+    className="w-full sm:w-auto"
   >
     Our Whitepaper
   </Button>
 );
 
-export const AboutButton = (props: OverloadProps) => (
-  <Button {...props} color="white" href={internalUrls.about}>
+export const AboutButton = () => (
+  <Button color="white" href={internalUrls.about} className="w-full sm:w-auto">
     What is Axone ?
   </Button>
 );
 
-export const Shape1 = (props: OverloadProps) => (
-  <Image {...props} src={shape1} alt="shape1" className="h-auto w-1/3" />
+export const Shape1 = () => (
+  <Image src={shape1} alt="shape1" className="h-auto w-1/3" />
 );

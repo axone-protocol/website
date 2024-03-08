@@ -1,6 +1,5 @@
 import { HTMLAttributeAnchorTarget } from "react";
 import { LinkProps as NextLinkProps } from "next/link";
-// import { ImageProps as NextImageProps } from "next/image";
 
 export type UnderlinedLinkProps = {
   url: string;
@@ -36,7 +35,7 @@ export type SectionWithTopImageProps = SectionTitleProps &
     };
   };
 
-export type SectionWithImageProps = AlignContentProps &
+export type SectionWithSideImageProps = AlignContentProps &
   SectionProps & {
     image: ImagePositionProps &
       ImageJustifyProps & {
@@ -44,30 +43,19 @@ export type SectionWithImageProps = AlignContentProps &
       };
   };
 
-export type SectionImageProps = AlignContentProps &
+export type ImageContainerProps = AlignContentProps &
   ImagePositionProps &
   ImageJustifyProps & {
     children: React.ReactNode;
   };
 
-export type ButtonCenteredOnBgImageProps = {
+export type BgImageContainerProps = {
   backgroundImage: React.ReactNode;
-  button: React.ReactNode;
+  className?: string;
+  children: React.ReactNode;
 };
 
-// for now, only className prop is overloaded in ui/home/[sectionName]/component.tsx
-// for ButtonsCenteredOnBgImage component props (LeftButton, RightButton, BackgroundImage)
-export type OverloadProps = { className?: string };
-
-export type ButtonsCenteredOnBgImageProps = {
-  BackgroundImage: React.ComponentType<OverloadProps>;
-  LeftButton: React.ComponentType<OverloadProps>;
-  RightButton: React.ComponentType<OverloadProps>;
+export type ButtonsContainerProps = {
+  leftButton: React.ReactNode;
+  rightButton: React.ReactNode;
 };
-
-// if other props need to be overload, you can use the following type
-// export type ButtonsCenteredOnBgImageProps = {
-//   BackgroundImage: React.ComponentType<Partial<NextImageProps>>;
-//   LeftButton: React.ComponentType<Partial<ButtonProps>>;
-//   RightButton: React.ComponentType<Partial<ButtonProps>>;
-// };

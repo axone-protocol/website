@@ -1,5 +1,6 @@
-import Section from "app/components/section";
-import ButtonsCenteredOnBgImage from "app/components/buttonsCenteredOnBgImage";
+import Section from "app/components/section/section";
+import BgImageContainer from "app/components/button/bgImageContainer";
+import ButtonsContainer from "app/components/button/buttonsContainer";
 import {
   WhitepaperButton,
   AboutButton,
@@ -24,11 +25,12 @@ export default function ProtocolSection() {
         A Cosmos-based appchain for AI workflow management, universally
         compatible with all AI services.
       </p>
-      <ButtonsCenteredOnBgImage
-        LeftButton={WhitepaperButton}
-        RightButton={AboutButton}
-        BackgroundImage={Shape1}
-      />
+      <BgImageContainer backgroundImage={<Shape1 />}>
+        <ButtonsContainer
+          leftButton={<WhitepaperButton />}
+          rightButton={<AboutButton />}
+        />
+      </BgImageContainer>
     </Section>
   );
 }

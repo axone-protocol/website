@@ -1,4 +1,4 @@
-import Section from "app/components/section";
+import Section from "app/components/section/section";
 import { SectionWithTopImageProps } from "app/lib/definitions";
 
 const SectionWithTopImage = ({

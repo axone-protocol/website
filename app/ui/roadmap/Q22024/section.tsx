@@ -1,11 +1,11 @@
 import Image from "next/image";
-import SectionWithImage from "app/components/sectionWithImage";
+import SectionWithSideImage from "app/components/section/sectionWithSideImage";
 import { roadmapSectionImageClass } from "app/lib/utils";
 import sphereAscii from "public/images/sphere-ascii.png";
 
 export default function Q22024Section() {
   return (
-    <SectionWithImage
+    <SectionWithSideImage
       title={{
         text: "Q2 2024",
         size: "lg",
@@ -27,6 +27,6 @@ export default function Q22024Section() {
       <p>TGE</p>
       <p>CEX listings</p>
       <p>IBC connexions to the Cosmos ecosystem & beyond</p>
-    </SectionWithImage>
+    </SectionWithSideImage>
   );
 }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionWithTopImage from "app/components/sectionWithTopImage";
+import SectionWithTopImage from "app/components/section/sectionWithTopImage";
 import UnderlinedLink from "app/components/underlinedLink";
 import { externalUrls } from "app/lib/navigation/constants";
 import axoneTextLogoAscii from "public/images/axone-text-logo-ascii.png";

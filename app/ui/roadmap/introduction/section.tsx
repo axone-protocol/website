@@ -1,4 +1,4 @@
-import Section from "app/components/section";
+import Section from "app/components/section/section";
 
 export default function IntroductionSection() {
   return (
