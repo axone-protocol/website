@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SectionWithSideImage from "app/components/section/sectionWithSideImage";
 import { roadmapSectionImageClass } from "app/lib/utils";
-import sphereAscii from "public/images/sphere-ascii.png";
+import axoneLogosGraph2 from "public/images/axone-logos-graph2.svg";
 
 export default function Q22024Section() {
   return (
@@ -15,8 +15,8 @@ export default function Q22024Section() {
       image={{
         component: (
           <Image
-            src={sphereAscii}
-            alt="sphere"
+            src={axoneLogosGraph2}
+            alt="axone logos graph 2"
             className={roadmapSectionImageClass}
           />
         ),

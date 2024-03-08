@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SectionWithTopImage from "app/components/section/sectionWithTopImage";
-import brainAscii from "public/images/brain-ascii.png";
+import { aboutSectionImageClass } from "app/lib/utils";
+import brain from "public/images/brain.svg";
 
 export default function CoordinationSection() {
   return (
@@ -14,11 +15,7 @@ export default function CoordinationSection() {
       padding
       image={{
         component: (
-          <Image
-            src={brainAscii}
-            alt="brain"
-            className="w-2/3 md:w-1/2 lg:w-2/3"
-          />
+          <Image src={brain} alt="brain" className={aboutSectionImageClass} />
         ),
       }}
     >

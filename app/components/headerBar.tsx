@@ -12,7 +12,7 @@ export default function HeaderBar() {
     <Navbar fixed="top" collapseOnSelect expand="xl" bg="white">
       <Container>
         <Navbar.Brand href={internalUrls.home}>
-          <AxoneLogo width="150" />
+          <AxoneLogo width="200" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

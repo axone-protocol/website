@@ -18,12 +18,12 @@ export default function ProtocolSection() {
       padding
     >
       <p>
-        Axone is the universal protocol to connect, share and monetize resources
-        between all AI services.
+        Axone is the universal protocol to connect, share and monetize any
+        resources in the AI stack.
       </p>
       <p className="mb-6 lg:mb-0">
-        A Cosmos-based appchain for AI workflow management, universally
-        compatible with all AI services.
+        An open network designed for collaborative AI workflow management,
+        universally compatible with any data, model or infrastructure.
       </p>
       <BgImageContainer backgroundImage={<Shape1 />}>
         <ButtonsContainer

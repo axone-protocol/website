@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SectionWithSideImage from "app/components/section/sectionWithSideImage";
 import { roadmapSectionImageClass } from "app/lib/utils";
-import laptopAscii from "public/images/laptop-ascii.png";
+import axoneLogos from "public/images/axone-logos-graph0.svg";
 
 export default function LastYearsSection() {
   return (
@@ -12,8 +12,8 @@ export default function LastYearsSection() {
       image={{
         component: (
           <Image
-            src={laptopAscii}
-            alt="laptop"
+            src={axoneLogos}
+            alt="axone logos"
             className={roadmapSectionImageClass}
           />
         ),

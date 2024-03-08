@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SectionWithSideImage from "app/components/section/sectionWithSideImage";
 import { roadmapSectionImageClass } from "app/lib/utils";
-import axoneLogoAscii from "public/images/axone-logo-ascii.png";
+import axoneLogosGraph1 from "public/images/axone-logos-graph1.svg";
 
 export default function Q12024Section() {
   return (
@@ -12,8 +12,8 @@ export default function Q12024Section() {
       image={{
         component: (
           <Image
-            src={axoneLogoAscii}
-            alt="axone"
+            src={axoneLogosGraph1}
+            alt="axone logos graph 1"
             className={roadmapSectionImageClass}
           />
         ),

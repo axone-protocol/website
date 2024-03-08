@@ -2,7 +2,7 @@ import { SectionTitleProps } from "app/lib/definitions";
 
 const fontSizes = {
   lg: "text-xl md:text-2xl",
-  xl: "text-2xl md:text-4xl",
+  xl: "text-2xl md:text-4xl xl:text-6xl",
 };
 
 const SectionTitle = ({ title }: SectionTitleProps) => {

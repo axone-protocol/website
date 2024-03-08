@@ -42,7 +42,7 @@ const NewsletterSubscription = () => (
 );
 
 const AxoneLogoAndSocialIcons = () => (
-  <div className="flex flex-col place-content-end gap-3">
+  <div className="flex flex-col place-content-center gap-3">
     <div className="flex justify-center sm:justify-end">
       <AxoneLogo width="200" />
     </div>
