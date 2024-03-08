@@ -1,8 +1,8 @@
-import Image from "next/image";
 import SectionWithTopImage from "app/components/section/sectionWithTopImage";
 import UnderlinedLink from "app/components/underlinedLink";
+import AxoneLogo from "app/components/axoneLogo";
 import { externalUrls } from "app/lib/navigation/constants";
-import axoneTextLogoAscii from "public/images/axone-text-logo-ascii.png";
+import { aboutSectionImageClass } from "app/lib/utils";
 
 export default function AboutAxoneSection() {
   return (
@@ -14,13 +14,7 @@ export default function AboutAxoneSection() {
       textAlign="left"
       padding
       image={{
-        component: (
-          <Image
-            src={axoneTextLogoAscii}
-            alt="axone text logo"
-            className="mb-5"
-          />
-        ),
+        component: <AxoneLogo className={`mb-5 ${aboutSectionImageClass}`} />,
       }}
     >
       <p className="pt-12">

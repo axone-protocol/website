@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SectionWithTopImage from "app/components/section/sectionWithTopImage";
-import openAscii from "public/images/open-ascii.png";
+import { aboutSectionImageClass } from "app/lib/utils";
+import open from "public/images/open.svg";
 
 export default function PurposeSection() {
   return (
@@ -13,11 +14,7 @@ export default function PurposeSection() {
       padding
       image={{
         component: (
-          <Image
-            src={openAscii}
-            alt="open"
-            className="w-2/3 md:w-1/2 lg:w-2/3"
-          />
+          <Image src={open} alt="open" className={aboutSectionImageClass} />
         ),
       }}
     >
@@ -38,7 +35,7 @@ export default function PurposeSection() {
         </p>
       </div>
       <p>
-        Welcome to the post-scarcity world where AI help us solve humanity’s
+        Welcome to the post-scarcity world where AI helps us solve humanity’s
         problems and we, the people, can benefit from it.
       </p>
     </SectionWithTopImage>

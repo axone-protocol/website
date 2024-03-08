@@ -26,7 +26,7 @@ export default function PrivacySection() {
       <p>
         With Axone, you can train your model using data from multiple sources
         with the data owner choosing his level of privacy, from federated
-        learning to open data contributons.
+        learning to open data contributions.
       </p>
     </SectionWithSideImage>
   );

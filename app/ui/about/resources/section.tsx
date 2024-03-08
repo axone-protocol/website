@@ -1,6 +1,5 @@
-import Image from "next/image";
 import SectionWithSideImage from "app/components/section/sectionWithSideImage";
-import axoneTextLogoAscii from "public/images/axone-text-logo-ascii.png";
+import AxoneLogo from "app/components/axoneLogo";
 
 export default function ResourcesSection() {
   return (
@@ -13,13 +12,7 @@ export default function ResourcesSection() {
         alignContent="center"
         textAlign="left"
         image={{
-          component: (
-            <Image
-              src={axoneTextLogoAscii}
-              alt="axone text logo"
-              className="sm:w-full"
-            />
-          ),
+          component: <AxoneLogo className="w-2/3 sm:w-3/5" />,
           position: "right",
         }}
       />
