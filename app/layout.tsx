@@ -2,6 +2,7 @@ import "app/styles/globals.css";
 import type { Metadata } from "next";
 import { Courier_Prime } from "next/font/google";
 import localFont from "next/font/local";
+import FaviconLinks from "app/components/faviconLinks";
 import HeaderBar from "app/components/headerBar";
 import Footer from "app/components/footer";
 
@@ -31,6 +32,7 @@ export default function RootLayout({
       className={`${courrierPrime.variable} ${SixtyFour.variable}`}
     >
       <body className={`${courrierPrime.className}`}>
+        <FaviconLinks />
         <HeaderBar />
         <div className="container mb-12 mt-24 space-y-20 md:mt-48">
           {children}
