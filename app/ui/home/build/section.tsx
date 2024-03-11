@@ -1,12 +1,12 @@
 import Image from "next/image";
 import SectionWithSideImage from "app/components/section/sectionWithSideImage";
-import computerAscii from "public/images/computer-ascii.svg";
+import computerAscii from "public/images/build-new-thing.svg";
 
-export default function ShareSection() {
+export default function BuildSection() {
   return (
     <SectionWithSideImage
       title={{
-        text: "Share anything",
+        text: "To build new things",
         size: "lg",
       }}
       textAlign="left"
@@ -24,7 +24,7 @@ export default function ShareSection() {
       }}
     >
       <p>
-      Data, algorithms, storage, compute, APIs… Anything on-chain and off-chain can be shared. 
+      Trust-minimized collaboration creates new opportunities for builders. Design workflows involving thousands of different providers. Axone redefines collaborative AI.
       </p>
     </SectionWithSideImage>
   );

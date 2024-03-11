@@ -4,6 +4,7 @@ import Button from "app/components/button/button";
 import BgImageContainer from "app/components/button/bgImageContainer";
 import SocialIcons from "app/components/socialIcons";
 import shape3 from "public/images/shape3.svg";
+import { externalUrls } from "app/lib/navigation/constants";
 
 export default function Footer() {
   return (
@@ -22,11 +23,6 @@ const NewsletterSubscription = () => (
       Subscribe to our newsletter
     </h1>
     <div className="flex sm:justify-start">
-      <input
-        type="email"
-        placeholder="email"
-        className="h-12 w-full border border-black pl-3 sm:w-80"
-      />
     </div>
     <div className="flex justify-center sm:justify-start">
       <BgImageContainer
@@ -53,7 +49,7 @@ const AxoneLogoAndSocialIcons = () => (
 );
 
 const SubscribeButton = () => (
-  <Button href="" color="orange" className="inline-flex justify-center">
+  <Button href={ externalUrls.subscription} color="orange" className="inline-flex justify-center" target="_blank">
     Subscribe
   </Button>
 );
