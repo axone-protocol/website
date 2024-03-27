@@ -29,7 +29,7 @@ const config: Config = {
       },
       fontSize: {
         "4xl": ["36px", "50px"],
-        "6xl": ["60px", "60px"],
+        "6xl": ["50px", "60px"],
       },
     },
   },
