@@ -27,3 +27,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.btn-orange:hover a {
+  background-color: #002131 !important;
+  transition: ease-in-out 200ms;
+}
+
+.btn-white:hover a {
+  background-color: #FB9501 !important;
+  transition: ease-in-out 200ms;
+  color: #fff !important;
+  border: solid 1px #fff !important;
+}
