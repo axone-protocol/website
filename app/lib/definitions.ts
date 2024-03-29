@@ -31,7 +31,7 @@ export type SectionProps = SectionTitleProps & {
 export type SectionWithTopImageProps = SectionTitleProps &
   SectionProps & {
     image: {
-      component: any;
+      component: JSX.Element;
     };
   };
 
@@ -39,7 +39,7 @@ export type SectionWithSideImageProps = AlignContentProps &
   SectionProps & {
     image: ImagePositionProps &
       ImageJustifyProps & {
-        component: any;
+        component: JSX.Element;
       };
   };
 
