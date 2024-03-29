@@ -1,6 +1,20 @@
 {
-  "name": "axone-web",
+  "name": "axone-website",
   "version": "0.1.0",
+  "description": "Website for the Axone protocol",
+  "homepage": "https://axone.xyz",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Axone",
+    "web": "https://axone.xyz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/axone-protocol/website"
+  },
+  "bugs": {
+    "url": "https://github.com/axone-protocol/website/issues"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
