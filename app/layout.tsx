@@ -1,10 +1,10 @@
-import 'app/styles/globals.css';
+import 'styles/globals.css';
 import type { Metadata } from 'next';
 import { Courier_Prime } from 'next/font/google';
 import localFont from 'next/font/local';
-import FaviconLinks from 'app/components/faviconLinks';
-import Footer from 'app/components/footer';
-import HeaderBar from 'app/components/headerBar';
+import FaviconLinks from 'components/faviconLinks';
+import Footer from 'components/footer';
+import HeaderBar from 'components/headerBar';
 
 const courrierPrime = Courier_Prime({
   subsets: ['latin'],

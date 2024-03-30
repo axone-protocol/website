@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import AboutAxoneSection from 'app/ui/about/axone/section';
-import CoordinationSection from 'app/ui/about/coordination/section';
-import OrchestrationSection from 'app/ui/about/orchestration/section';
-import PurposeSection from 'app/ui/about/purpose/section';
-import ResourcesSection from 'app/ui/about/resources/section';
-import VisionSection from 'app/ui/about/vision/section';
+import AboutAxoneSection from 'ui/about/axone/section';
+import CoordinationSection from 'ui/about/coordination/section';
+import OrchestrationSection from 'ui/about/orchestration/section';
+import PurposeSection from 'ui/about/purpose/section';
+import ResourcesSection from 'ui/about/resources/section';
+import VisionSection from 'ui/about/vision/section';
 
 export const metadata: Metadata = {
   title: 'Axone - About us',
