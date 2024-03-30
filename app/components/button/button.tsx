@@ -1,9 +1,9 @@
-import Link from "next/link";
-import { ButtonProps } from "app/lib/definitions";
+import Link from 'next/link';
+import { ButtonProps } from 'app/lib/definitions';
 
 const buttonColors = {
-  orange: "bg-orange text-white",
-  white: "border border-black bg-white text-black",
+  orange: 'bg-orange text-white',
+  white: 'border border-black bg-white text-black',
 };
 
 const Button = ({ children, href, color, className, target }: ButtonProps) => {

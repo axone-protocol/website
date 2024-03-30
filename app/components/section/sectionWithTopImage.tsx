@@ -1,5 +1,5 @@
-import Section from "app/components/section/section";
-import { SectionWithTopImageProps } from "app/lib/definitions";
+import Section from 'app/components/section/section';
+import { SectionWithTopImageProps } from 'app/lib/definitions';
 
 const SectionWithTopImage = ({
   title,
@@ -8,10 +8,10 @@ const SectionWithTopImage = ({
   children,
   padding,
 }: SectionWithTopImageProps) => {
-  const paddingX = padding ? "sm:px-20 lg:px-60" : "";
+  const paddingX = padding ? 'sm:px-20 lg:px-60' : '';
   return (
     <div className={`flex flex-col gap-3 ${paddingX}`}>
-      <div className="flex justify-center pb-12">{image.component}</div>
+      <div className='flex justify-center pb-12'>{image.component}</div>
       <Section title={title} textAlign={textAlign}>
         {children}
       </Section>

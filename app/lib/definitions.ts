@@ -1,5 +1,5 @@
-import { HTMLAttributeAnchorTarget } from "react";
-import { LinkProps as NextLinkProps } from "next/link";
+import { LinkProps as NextLinkProps } from 'next/link';
+import { HTMLAttributeAnchorTarget } from 'react';
 
 export type UnderlinedLinkProps = {
   url: string;
@@ -9,21 +9,21 @@ export type UnderlinedLinkProps = {
 
 export type ButtonProps = NextLinkProps & {
   children: React.ReactNode;
-  color: "orange" | "white";
+  color: 'orange' | 'white';
   className?: string;
   target?: HTMLAttributeAnchorTarget;
 };
 
-type AlignContentProps = { alignContent: "center" | "top" };
-type ImagePositionProps = { position: "left" | "right" };
-type ImageJustifyProps = { justify?: "left" | "center" | "right" };
+type AlignContentProps = { alignContent: 'center' | 'top' };
+type ImagePositionProps = { position: 'left' | 'right' };
+type ImageJustifyProps = { justify?: 'left' | 'center' | 'right' };
 
 export type SectionTitleProps = {
-  title: { text: string; size: "lg" | "xl" };
+  title: { text: string; size: 'lg' | 'xl' };
 };
 
 export type SectionProps = SectionTitleProps & {
-  textAlign: "left" | "center" | "right";
+  textAlign: 'left' | 'center' | 'right';
   padding?: boolean;
   children?: React.ReactNode;
 };

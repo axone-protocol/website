@@ -1,14 +1,14 @@
-import Section from "app/components/section/section";
+import Section from 'app/components/section/section';
 
-export default function IntroductionSection() {
+export default function IntroductionSection () {
   return (
-    <div className="pb-28">
+    <div className='pb-28'>
       <Section
         title={{
-          text: "Axone Roadmap",
-          size: "xl",
+          text: 'Axone Roadmap',
+          size: 'xl',
         }}
-        textAlign="center"
+        textAlign='center'
         padding
       >
         <div>
@@ -22,7 +22,7 @@ export default function IntroductionSection() {
             and community.
           </p>
           <p>
-            This roadmap is essential for understanding the {"project's"}{" "}
+            This roadmap is essential for understanding the {'project\'s'}{' '}
             trajectory and the anticipated significant developments.
           </p>
         </div>

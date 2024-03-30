@@ -1,26 +1,26 @@
-import Image from "next/image";
-import SectionWithSideImage from "app/components/section/sectionWithSideImage";
-import { roadmapSectionImageClass } from "app/lib/utils";
-import axoneLogosGraph2 from "public/images/axone-logos-graph2.svg";
+import Image from 'next/image';
+import SectionWithSideImage from 'app/components/section/sectionWithSideImage';
+import { roadmapSectionImageClass } from 'app/lib/utils';
+import axoneLogosGraph2 from 'public/images/axone-logos-graph2.svg';
 
-export default function Q22024Section() {
+export default function Q22024Section () {
   return (
     <SectionWithSideImage
       title={{
-        text: "Q2 2024",
-        size: "lg",
+        text: 'Q2 2024',
+        size: 'lg',
       }}
-      textAlign="right"
-      alignContent="center"
+      textAlign='right'
+      alignContent='center'
       image={{
         component: (
           <Image
             src={axoneLogosGraph2}
-            alt="axone logos graph 2"
+            alt='axone logos graph 2'
             className={roadmapSectionImageClass}
           />
         ),
-        position: "right",
+        position: 'right',
       }}
     >
       <p>Mainnet launch</p>

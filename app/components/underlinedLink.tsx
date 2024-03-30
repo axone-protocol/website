@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { UnderlinedLinkProps } from "app/lib/definitions";
+import Link from 'next/link';
+import { UnderlinedLinkProps } from 'app/lib/definitions';
 
 const UnderlinedLink = ({ url, target, children }: UnderlinedLinkProps) => (
-  <Link href={url} className="underline" target={target}>
+  <Link href={url} className='underline' target={target}>
     {children}
   </Link>
 );

@@ -1,25 +1,25 @@
-import Image from "next/image";
-import SectionWithTopImage from "app/components/section/sectionWithTopImage";
-import { aboutSectionImageClass } from "app/lib/utils";
-import brain from "public/images/brain.svg";
+import Image from 'next/image';
+import SectionWithTopImage from 'app/components/section/sectionWithTopImage';
+import { aboutSectionImageClass } from 'app/lib/utils';
+import brain from 'public/images/brain.svg';
 
-export default function CoordinationSection() {
+export default function CoordinationSection () {
   return (
     <SectionWithTopImage
       title={{
         text: `From economies of scale...
         to coordination at scale`,
-        size: "lg",
+        size: 'lg',
       }}
-      textAlign="left"
+      textAlign='left'
       padding
       image={{
         component: (
-          <Image src={brain} alt="brain" className={aboutSectionImageClass} />
+          <Image src={brain} alt='brain' className={aboutSectionImageClass} />
         ),
       }}
     >
-      <p className="pt-12">
+      <p className='pt-12'>
         Building AI is about coordination between data, models, and
         infrastructure.
       </p>

@@ -1,23 +1,23 @@
-import SectionWithTopImage from "app/components/section/sectionWithTopImage";
-import UnderlinedLink from "app/components/underlinedLink";
-import AxoneLogo from "app/components/axoneLogo";
-import { externalUrls } from "app/lib/navigation/constants";
-import { aboutSectionImageClass } from "app/lib/utils";
+import AxoneLogo from 'app/components/axoneLogo';
+import SectionWithTopImage from 'app/components/section/sectionWithTopImage';
+import UnderlinedLink from 'app/components/underlinedLink';
+import { externalUrls } from 'app/lib/navigation/constants';
+import { aboutSectionImageClass } from 'app/lib/utils';
 
-export default function AboutAxoneSection() {
+export default function AboutAxoneSection () {
   return (
     <SectionWithTopImage
       title={{
-        text: "What is Axone?",
-        size: "lg",
+        text: 'What is Axone?',
+        size: 'lg',
       }}
-      textAlign="left"
+      textAlign='left'
       padding
       image={{
         component: <AxoneLogo className={`mb-5 ${aboutSectionImageClass}`} />,
       }}
     >
-      <p className="pt-12">
+      <p className='pt-12'>
         Axone is an open network that lets users buy or sell any off-chain
         resource securely and efficiently. A blockchain specifically designed
         for off-chain coordination at scale.
@@ -39,16 +39,16 @@ export default function AboutAxoneSection() {
         synergies with anything web2 or web3.
       </p>
       <p>
-        More details on Axone on our{" "}
-        <UnderlinedLink url={externalUrls.whitepaper} target="_blank">
+        More details on Axone on our{' '}
+        <UnderlinedLink url={externalUrls.whitepaper} target='_blank'>
           WhitePaper
         </UnderlinedLink>
-        , our{" "}
-        <UnderlinedLink url={externalUrls.academy} target="_blank">
+        , our{' '}
+        <UnderlinedLink url={externalUrls.academy} target='_blank'>
           Academy
-        </UnderlinedLink>{" "}
-        and our{" "}
-        <UnderlinedLink url={externalUrls.doc} target="_blank">
+        </UnderlinedLink>{' '}
+        and our{' '}
+        <UnderlinedLink url={externalUrls.doc} target='_blank'>
           Technical Docs
         </UnderlinedLink>
       </p>

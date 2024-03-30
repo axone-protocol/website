@@ -1,18 +1,18 @@
-import Image, { ImageProps } from "next/image";
-import logo from "public/images/axone-logo.svg";
+import Image, { ImageProps } from 'next/image';
+import logo from 'public/images/axone-logo.svg';
 
 const AxoneLogo = ({
   width,
-  className = "",
+  className = '',
 }: {
-  width?: ImageProps["width"];
+  width?: ImageProps['width'];
   className?: string;
 }) => (
   <Image
     src={logo}
     priority
     width={width}
-    alt="Axone logo"
+    alt='Axone logo'
     className={className}
   />
 );

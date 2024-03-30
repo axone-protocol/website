@@ -1,23 +1,23 @@
-import Image from "next/image";
-import SectionWithSideImage from "app/components/section/sectionWithSideImage";
-import { roadmapSectionImageClass } from "app/lib/utils";
-import axoneLogos from "public/images/axone-logos-graph0.svg";
+import Image from 'next/image';
+import SectionWithSideImage from 'app/components/section/sectionWithSideImage';
+import { roadmapSectionImageClass } from 'app/lib/utils';
+import axoneLogos from 'public/images/axone-logos-graph0.svg';
 
-export default function LastYearsSection() {
+export default function LastYearsSection () {
   return (
     <SectionWithSideImage
-      title={{ text: "2022 - 2023", size: "lg" }}
-      textAlign="right"
-      alignContent="center"
+      title={{ text: '2022 - 2023', size: 'lg' }}
+      textAlign='right'
+      alignContent='center'
       image={{
         component: (
           <Image
             src={axoneLogos}
-            alt="axone logos"
+            alt='axone logos'
             className={roadmapSectionImageClass}
           />
         ),
-        position: "right",
+        position: 'right',
       }}
     >
       <p>Incentivized public testnet launched in Nov. 2022</p>

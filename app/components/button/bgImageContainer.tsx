@@ -1,4 +1,4 @@
-import { BgImageContainerProps } from "app/lib/definitions";
+import { BgImageContainerProps } from 'app/lib/definitions';
 
 const BgImageContainer = ({
   backgroundImage,
@@ -6,7 +6,7 @@ const BgImageContainer = ({
   children,
 }: BgImageContainerProps) => {
   return (
-    <div className="relative">
+    <div className='relative'>
       <div className={`flex items-center justify-center ${className}`}>
         {backgroundImage}
       </div>

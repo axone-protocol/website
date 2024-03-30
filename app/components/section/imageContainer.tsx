@@ -1,19 +1,19 @@
-import { ImageContainerProps } from "app/lib/definitions";
+import { ImageContainerProps } from 'app/lib/definitions';
 
 const horizontalAligns = {
-  left: "sm:justify-start",
-  center: "sm:justify-center",
-  right: "sm:justify-end",
+  left: 'sm:justify-start',
+  center: 'sm:justify-center',
+  right: 'sm:justify-end',
 };
 
 const verticalAligns = {
-  top: "items-start",
-  center: "items-center",
+  top: 'items-start',
+  center: 'items-center',
 };
 
 const ImageContainer = ({
   alignContent,
-  justify = "center",
+  justify = 'center',
   children,
 }: ImageContainerProps) => {
   const alignX = horizontalAligns[justify];
