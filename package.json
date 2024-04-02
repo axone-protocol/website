@@ -1,12 +1,30 @@
 {
-  "name": "axone-web",
+  "name": "axone-website",
   "version": "0.1.0",
+  "description": "Website for the Axone protocol",
+  "homepage": "https://axone.xyz",
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Axone",
+    "web": "https://axone.xyz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/axone-protocol/website"
+  },
+  "bugs": {
+    "url": "https://github.com/axone-protocol/website/issues"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "engines": {
+    "node": "^18.20.0",
+    "yarn": "~1.22.19"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -16,12 +34,16 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@stylistic/eslint-plugin": "^1.7.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "eslint-plugin-unused-imports": "^3.1.0",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",

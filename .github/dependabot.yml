@@ -1,0 +1,23 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - amimart
+      - ccamel
+    assignees:
+      - amimart
+      - ccamel
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    reviewers:
+      - amimart
+      - ccamel
+    assignees:
+      - amimart
+      - ccamel
+    open-pull-requests-limit: 5
