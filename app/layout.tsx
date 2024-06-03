@@ -5,6 +5,7 @@ import localFont from 'next/font/local';
 import FaviconLinks from 'components/faviconLinks';
 import Footer from 'components/footer';
 import HeaderBar from 'components/headerBar';
+import MatomoInitializer from 'components/MatomoInitializer';
 
 const courrierPrime = Courier_Prime({
   subsets: ['latin'],
@@ -22,19 +23,13 @@ export const metadata: Metadata = {
     'Axone is the universal protocol to connect, share and monetize any resources in the AI stack',
 };
 
-export default function RootLayout ({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout ({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang='en'
-      className={`${courrierPrime.variable} ${SixtyFour.variable}`}
-    >
+    <html lang='en' className={`${courrierPrime.variable} ${SixtyFour.variable}`}>
       <body className={`${courrierPrime.className}`}>
         <FaviconLinks />
         <HeaderBar />
+        <MatomoInitializer />
         <div className='container mb-12 mt-24 space-y-20 md:mt-48'>
           {children}
           <Footer />
