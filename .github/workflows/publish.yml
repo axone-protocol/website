@@ -13,6 +13,10 @@ concurrency:
 jobs:
   publish-gh-pages:
     runs-on: ubuntu-22.04
+    environment: github-pages
+    env:
+      NEXT_PUBLIC_MATOMO_URL: ${{ vars.MATOMO_URL }}
+      NEXT_PUBLIC_MATOMO_SITE_ID: ${{ vars.MATOMO_SITE_ID }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
